@@ -1,16 +1,17 @@
 'use strict';
 
 var gulp = require('gulp');
-var cssmin = require('gulp-minify-css');
+var cssnano = require('gulp-cssnano');
 var rename = require("gulp-rename");
 var sass = require('gulp-sass');
+var config = require('../config');
 
 
 gulp.task('styles', function() {
 	return gulp.src(config.styles.src)
 	    .pipe(sass())
 	    .pipe(gulp.dest(config.styles.dest))
-	    .pipe(cssmin())
+	    .pipe(cssnano())
 	    .pipe(rename({
 	      	suffix: '.min'
 	   	}))
