@@ -4,24 +4,35 @@ var scriptSource = './src/js/**/*.js';
 
 module.exports = {
 
-  'serverport': 8888,
+    'serverport': 8888,
 
-  'scripts': {
-    'src': scriptSource,
-    'dest': './dist/js/'
-  },
+    'scripts': {
+        'src': scriptSource,
+        'dest': './dist/js/'
+    },
 
-  'images': {
-    'src': './src/images/**/*.{jpeg,jpg,png,svg}',
-    'dest': './dist/images/'
-  },
+    'html': {
+        'src': './src/views/**/*.html',
+        'dest': './dist/views/'
+    },
 
-  'styles': {
-    'src': './src/styles/**/*.scss',
-    'dest': './dist/css/'
-  },
+    'images': {
+        'src': './src/images/**/*.{jpeg,jpg,png,svg}',
+        'dest': './dist/images/'
+    },
 
-  'sourceDir': './src/',
+    'styles': {
+        'src': './src/styles/**/*.scss',
+        'dest': './dist/css/'
+    },
+    'vendor': {
+        'src': './src/node_modules/**/*.{*}',
+        'dist': './dist/vendor/'
+    },
 
-  'buildDir': './dist/'
+    'sourceDir': './src/',
+
+    'buildDir': './dist/',
+
+    'npmDir': "./node_modules/"
 };
