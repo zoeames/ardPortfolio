@@ -4,7 +4,9 @@ var scriptSource = './src/js/**/*.js';
 
 module.exports = {
 
-    'serverport': 8888,
+    'livereloadport': 35729,
+
+    'serverport': 5000,
 
     'scripts': {
         'src': scriptSource,
