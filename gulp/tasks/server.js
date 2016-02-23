@@ -1,36 +1,24 @@
 'use strict';
+var gulp = require('gulp'),
+  //refresh = require('gulp-livereload'),
+  lrserver = require('tiny-lr')(),
+  express = require('express'),
+  livereload = require('connect-livereload'),
+  livereloadport = 35729,
+  serverport = 5000;
 
-var config  = require('../config');
-var http    = require('http');
-var express = require('express');
-var gulp    = require('gulp');
-var gutil   = require('gulp-util');
-var morgan  = require('morgan');
+//We only configure the server here and start it only when running the watch task
+var server = express();
+//Add livereload middleware before static-middleware
+server.use(livereload({
+  port: livereloadport
+}));
+server.use(express.static('./dist'));
 
 gulp.task('server', function() {
+  //Set up your static fileserver, which serves files in the build dir
+  server.listen(serverport);
 
-  var server = express();
-
-  // log all requests to the console
-  server.use(morgan('dev'));
-  server.use(express.static(config.buildDir));
-
-  // Serve index.html for all routes to leave routing up to react-router
-  server.all('/*', function(req, res) {
-      res.sendFile('index.html', { root: 'dist' });
-  });
-
-  // Start webserver if not already running
-  var s = http.createServer(server);
-  s.on('error', function(err){
-    if(err.code === 'EADDRINUSE'){
-      gutil.log('Development server is already started at port ' + config.serverport);
-    }
-    else {
-      throw err;
-    }
-  });
-
-  s.listen(config.serverport);
-
+  //Set up your livereload server
+  lrserver.listen(livereloadport);
 });
