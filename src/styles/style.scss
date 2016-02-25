@@ -1,0 +1,19 @@
+$blue: rgb(40, 170, 220);
+
+p {
+  color: $blue;
+}
+
+
+strong {
+  font-weight: 700;
+}
+
+
+h1{
+	color: red;
+}
+
+body{
+	background-color: $blue;
+}
