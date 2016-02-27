@@ -1,6 +1,10 @@
-var app = angular.module("ardPortfolio", []);
+var app = angular.module("ardPortfolio", ['ngRoute']);
 
-
-app.controller("MainCtrl", function($scope) {
-    $scope.title = "Welcome";
-});
+app.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider
+      .when('/', {templateUrl: 'views/welcome.html', controller: 'WelcomeCtrl'})
+      .when('/about', {templateUrl: 'views/about.html', controller: 'AboutCtrl'})
+      .when('/gallery', {templateUrl: 'views/gallery.html', controller: 'GalleryCtrl'})
+      .otherwise({redirectTo: '/'});
+  }]);

@@ -9,7 +9,8 @@ gulp.task('copyVendor', function() {
 	 var npm = {
         "bootstrap" : "bootstrap/dist/**/*.{js,css,woff,eot}",
         "jquery" : "jquery/dist/jquery*.js",
-        "angular" : "angular/angular*.js"
+        "angular" : "angular/angular*.js",
+        "angular-route":"angular-route/angular-route.js"
     }
 
     for (var destinationDir in npm) {
