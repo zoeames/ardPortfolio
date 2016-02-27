@@ -2,11 +2,18 @@
 <html>
 <head>
 <title>Alanna Rose Dunn</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body ng-app="ardPortfolio">
 
-<h1 ng-controller='MainCtrl'>Home Page</h1>
+<div>
+  <div ng-include src="'views/nav.html'"></div>
+</div>
+<div ui-view>
+  <h1 ng-controller='MainCtrl'>Home Page</h1>  
+</div>
+
+
 <script src="vendor/angular/angular.min.js"></script>
 <script src="./js/app.js"></script>
 </body>
