@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "postinstall": "gulp dev"
+    "postinstall": "gulp deploy"
   },
   "engines": {
     "node": "0.12.7"
