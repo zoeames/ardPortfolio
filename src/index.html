@@ -9,12 +9,17 @@
 <div>
   <div ng-include src="'views/nav.html'"></div>
 </div>
-<div ui-view>
-  <h1 ng-controller='MainCtrl'>Home Page</h1>  
+<div ng-view>
+  
 </div>
 
 
 <script src="vendor/angular/angular.min.js"></script>
+<script src="vendor/angular-route/angular-route.js"></script>
+
 <script src="./js/app.js"></script>
+<script src="./js/controllers/WelcomeCtrl.js"></script>
+<script src="./js/controllers/AboutCtrl.js"></script>
+<script src="./js/controllers/GalleryCtrl.js"></script>
 </body>
 </html>

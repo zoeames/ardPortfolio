@@ -9,12 +9,6 @@ var lrserver 	= require('tiny-lr')();
 
 gulp.task('scripts', function() {
   	return gulp.src(config.scripts.src)
-	    	   .pipe(concat('app.js'))
-	    	   .pipe(gulp.dest(config.scripts.dest))
-	           .pipe(uglify())
-	    	   .pipe(rename({
-	      			suffix: '.min'
-	    	   }))
 	    	   .pipe(gulp.dest(config.scripts.dest))
 	    	   .pipe(refresh(lrserver));
 });
