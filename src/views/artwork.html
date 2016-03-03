@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>  
+<div >
+  <form>
+    Title: <input type="text" ng-model="newArtwork.title" /><br />
+    Medium: <input type="text" ng-model="newArtwork.medium" /><br />
+    Filename: <input type="text" ng-model="newArtwork.filename" /><br />
+    <input type="submit" ng-click="addArt()" value="Save" />
+  </form>
+</div>
+
+
+<div class='artwork-container'>
+	<ul ng-repeat="art in artwork">
+  		<li>Title: {{art.title}}</li>
+  		<li>Medium: {{art.medium}}</li>
+  		<li>Filename: {{art.filename}}</li>
+	</ul>
+</div>

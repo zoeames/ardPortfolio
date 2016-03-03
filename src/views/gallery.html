@@ -1,1 +1,8 @@
 <h1>{{title}}</h1>  
+<div class='portfolio-container'>
+	<ul ng-repeat="art in artwork">
+  		<li>Title: {{art.title}}</li>
+  		<li>Medium: {{art.medium}}</li>
+  		<li>Filename: {{art.filename}}</li>
+	</ul>
+</div>
