@@ -13,6 +13,7 @@ app.controller("ArtworkCtrl", function($scope, $http) {
 		  data: $scope.newArtwork
 		}).then(function successCallback(response) {
 		    console.log('it works!!', response);
+                $scope.newArtwork = {};
 		    getArt();
 		}, function errorCallback(response) {
 		    console.log('error in ArtworkCtrl POST request', response);
