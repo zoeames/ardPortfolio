@@ -8,6 +8,6 @@ gulp.task('build', function(callback) {
   callback = callback || function() {};
 
   // Run all tasks once
-  return runSequence(['clean', 'scripts', 'styles', 'copyIndex', 'copyHtml', 'copyFonts', 'copyIcons', 'copyVendor'], callback);
+  return runSequence(['clean', 'scripts', 'styles', 'copyIndex', 'copyHtml', 'copyImages', 'copyFonts', 'copyIcons', 'copyVendor'], callback);
 
 });

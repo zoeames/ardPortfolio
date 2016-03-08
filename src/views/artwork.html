@@ -4,15 +4,32 @@
     Title: <input type="text" ng-model="newArtwork.title" /><br />
     Medium: <input type="text" ng-model="newArtwork.medium" /><br />
     Filename: <input type="text" ng-model="newArtwork.filename" /><br />
+    Size: <input type="text" ng-model="newArtwork.size" /><br />
+    Year Completed: <input type="text" ng-model="newArtwork.yearCompleted" /><br />
     <input type="submit" ng-click="addArt()" value="Save" />
   </form>
 </div>
 
+<table  class="striped">
+  <thead>
+    <tr>
+        <th data-field="title">Title</th>
+        <th data-field="medium">Medium</th>
+        <th data-field="size">Size</th>
+        <th data-field="yearCompleted">Year Completed</th>
+        <th data-field="filename">Filename</th>
+        <th data-field="thumbnail">Thumbnail</th>
+    </tr>
+  </thead>
 
-<div class='artwork-container'>
-	<ul class="card-panel teal lighten-2" ng-repeat="art in artwork">
-  		<li>Title: {{art.title}}</li>
-  		<li>Medium: {{art.medium}}</li>
-  		<li>Filename: {{art.filename}}</li>
-	</ul>
-</div>
+  <tbody  ng-repeat="art in artwork">
+    <tr>
+      <td>{{art.title}}</td>
+      <td>{{art.medium}}</td>
+      <td>{{art.size}}</td>
+      <td>{{art.yearCompleted}}</td>
+      <td>{{art.filename}}</td>
+      <td><img src="/images/artwork/{{art.filename}}" style='height: 50px'></td>
+    </tr>
+  </tbody>
+</table>
