@@ -5,12 +5,24 @@ app.controller("ArtworkCtrl", function($scope, $http) {
 
     var artworkFirebase = 'https://ad-portfilio.firebaseio.com/artwork.json'
 
+
+
+
+
+
     $scope.addArt = function(){
     	console.log($scope.newArtwork);
 	    $http({
-		  method: 'POST',
-		  url: artworkFirebase,
-		  data: $scope.newArtwork
+			method: 'POST',
+		 	url: artworkFirebase,
+		 	data: {
+		 		title: $scope.newArtwork.title,
+		 		medium: $scope.newArtwork.medium,
+		 		size: $scope.newArtwork.size,
+				yearCompleted: $scope.newArtwork.yearCompleted,
+		 		filename: $scope.newArtwork.filename,
+		 		imgUrl: '/images/artwork/'+$scope.newArtwork.filename
+		 	}
 		}).then(function successCallback(response) {
 		    console.log('it works!!', response);
                 $scope.newArtwork = {};

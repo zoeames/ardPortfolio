@@ -1,0 +1,183 @@
+{
+  "artwork" : {
+    "-KCIll45rBoAJmI8z9eX" : {
+      "filename" : "twins.jpg",
+      "imgUrl" : "/images/artwork/twins.jpg",
+      "medium" : "Graphite on Paper",
+      "size" : "22x30",
+      "title" : "Twins",
+      "yearCompleted" : "2013"
+    },
+    "-KCLfTfv-KsQ_akbFDGl" : {
+      "filename" : "sisters.jpg",
+      "imgUrl" : "/images/artwork/sisters.jpg",
+      "medium" : "Graphite on Paper",
+      "size" : "22x30",
+      "title" : "Sisters",
+      "yearCompleted" : "2013"
+    },
+    "-KCLrOTBplTG5gXCOt50" : {
+      "filename" : "grandma.jpg",
+      "imgUrl" : "/images/artwork/grandma.jpg",
+      "medium" : "Graphite on Paper",
+      "size" : "22x30",
+      "title" : "Drinks with Grandma",
+      "yearCompleted" : "2014"
+    },
+    "-KCLrOm-7vM-C2x-A-__" : {
+      "filename" : "bestfriends.jpg",
+      "imgUrl" : "/images/artwork/bestfriends.jpg",
+      "medium" : "Graphite on Paper",
+      "size" : "22x30",
+      "title" : "Best Friends",
+      "yearCompleted" : "2013"
+    },
+    "-KCLrP0Ky2Jb9-1o2sSl" : {
+      "filename" : "dandelionwishes.jpg",
+      "imgUrl" : "/images/artwork/dandelionwishes.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "24x30",
+      "title" : "Dandelion Wishes",
+      "yearCompleted" : "2013"
+    },
+    "-KCLrPISmKR8fCqGxdpv" : {
+      "filename" : "dandeliondreams.jpg",
+      "imgUrl" : "/images/artwork/dandeliondreams.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "20x24",
+      "title" : "Dandelion Dreams",
+      "yearCompleted" : "2013"
+    },
+    "-KCLrPUINSzcLNKxgMim" : {
+      "filename" : "springflowerbombs.jpg",
+      "imgUrl" : "/images/artwork/springflowerbombs.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "18x24",
+      "title" : "Spring Flowerbombs",
+      "yearCompleted" : "2014"
+
+    },
+    "-KCLrPY6FDcn4_t20jNI" : {
+      "filename" : "rosegarden.jpg",
+      "imgUrl" : "/images/artwork/rosegarden.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "24x30",
+      "title" : "Rose Garden",
+      "yearCompleted" : "2015"
+
+    },
+    "-KCLrPa6uLRpCdhs89T1" : {
+      "filename" : "botanicalgarden.jpg",
+      "imgUrl" : "/images/artwork/botanicalgarden.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "18x24",
+      "title" : "Botanical Garden",
+      "yearCompleted" : "2015"
+
+    },
+    "-KCLrPcmrxovcWk7k8cT" : {
+      "filename" : "fourwishes.jpg",
+      "imgUrl" : "/images/artwork/fourwishes.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "22x28",
+      "title" : "Four Wishes",
+      "yearCompleted" : "2016"
+    },
+    "-KCLrPff0Fage-CUeuec" : {
+      "filename" : "dandelionfield.jpg",
+      "imgUrl" : "/images/artwork/dandelionfield.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "22x28",
+      "title" : "Dandelion Field",
+      "yearCompleted" : "2016"
+    },
+    "-KCLrPieVZKRJ8ZhVWQw" : {
+      "filename" : "stormrollingin.jpg",
+      "imgUrl" : "/images/artwork/stormrollingin.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "22x28",
+      "title" : "Storm Rolling In",
+      "yearCompleted" : "2014"
+    },
+    "-KCLrPkVTz_pJ5MpM6lT" : {
+      "filename" : "flight.jpg",
+      "imgUrl" : "/images/artwork/flight.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "20x24",
+      "title" : "Flight",
+      "yearCompleted" : "2014"
+    },
+    "-KCLrPnHUH8g-Ycl9CSu" : {
+      "filename" : "lakehouse.jpg",
+      "imgUrl" : "/images/artwork/lakehouse.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "20x24",
+      "title" : "The Lakehouse",
+      "yearCompleted" : "2013"
+    },
+    "-KCLrPpYTDtJNi7YMqOT" : {
+      "filename" : "duststorm.jpg",
+      "imgUrl" : "/images/artwork/duststorm.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "18x24",
+      "title" : "Dust Storm",
+      "yearCompleted" : "2013"
+    },
+    "-KCLrPsJFSD8M58F4_bc" : {
+      "filename" : "animal.jpg",
+      "imgUrl" : "/images/artwork/animal.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "20x24",
+      "title" : "If I were an Animal...",
+      "yearCompleted" : "2013"
+    },
+    "-KCLrWBcE4CbbD0Y04Fo" : {
+      "filename" : "boxes.jpg",
+      "imgUrl" : "/images/artwork/boxes.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "18x24",
+      "title" : "Still Life: Take out Boxes",
+      "yearCompleted" : "2013"
+    },
+    "-KCLrWHpjXKC1gPtdE76" : {
+      "filename" : "springlake.jpg",
+      "imgUrl" : "/images/artwork/springlake.jpg",
+      "medium" : "Oil on Canvas",
+      "size" : "18x24",
+      "title" : "Spring Lake",
+      "yearCompleted" : "2015"
+    },
+    "-KCLrWIhKdTYInAo94fW" : {
+      "filename" : "societyhill.jpg",
+      "imgUrl" : "/images/artwork/societyhill.jpg",
+      "medium" : "Anthropologie Display",
+      "size" : "",
+      "title" : "Society Hill Dining Concept",
+      "yearCompleted" : "2015"
+    },
+    "-KCLrWL3qOLKgJVSm-o_" : {
+      "filename" : "paintedartwall.jpg",
+      "imgUrl" : "/images/artwork/paintedartwall.jpg",
+      "medium" : "Anthropologie Display",
+      "size" : "",
+      "title" : "Painted Art Wall",
+      "yearCompleted" : "2015"
+    },
+    "-KCLrWL_u8oiK8brcgms" : {
+      "filename" : "dutchhotel.jpg",
+      "imgUrl" : "/images/artwork/dutchhotel.jpg",
+      "medium" : "Anthropologie Display",
+      "size" : "",
+      "title" : "The Dutch Hotel Dining Concept",
+      "yearCompleted" : "2015"
+    },
+    "-KCLrWO3zHqqBXwaTATN" : {
+      "filename" : "holiday.jpg",
+      "imgUrl" : "/images/artwork/holiday.jpg",
+      "medium" : "Anthropologie Display",
+      "size" : "",
+      "title" : "Holiday",
+      "yearCompleted" : "2014"
+    }
+  }
+}
