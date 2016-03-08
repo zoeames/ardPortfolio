@@ -1,6 +1,6 @@
 .nav ul {
   list-style: none;
-  background-color: #444;
+  background-color: $darkgray;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -15,13 +15,13 @@
  
 .nav a {
   text-decoration: none;
-  color: #fff;
+  color: $aqua;
   display: block;
   transition: .3s background-color;
 }
  
 .nav a:hover {
-  background-color: #005f5f;
+  background-color: $lightgray;
 }
  
 .nav a.active {
