@@ -3,18 +3,28 @@ app.controller("ArtworkCtrl", function($scope, $http) {
     $scope.artwork = {};
     $scope.newArtwork = {};
 
-    var artworkFirebase = 'https://ad-portfilio.firebaseio.com/artwork.json'
+    var artworkFirebase = 'https://ad-portfilio.firebaseio.com/artwork';
 
 
-
-
+	$scope.deleteArt = function(artId){
+		console.log('you are in the delete!!!', artId)
+		$http({
+		 	method: 'DELETE',
+		 	url: artworkFirebase +'/'+ artId + '.json'
+		}).then(function successCallback(response) {
+		    console.log('it works!!', response);
+		    getArt();
+		}, function errorCallback(response) {
+		    console.log('error in ArtworkCtrl DELETE request', response);
+		});
+	};
 
 
     $scope.addArt = function(){
     	console.log($scope.newArtwork);
 	    $http({
 			method: 'POST',
-		 	url: artworkFirebase,
+		 	url: artworkFirebase+'.json',
 		 	data: {
 		 		title: $scope.newArtwork.title,
 		 		medium: $scope.newArtwork.medium,
@@ -36,7 +46,7 @@ app.controller("ArtworkCtrl", function($scope, $http) {
     var getArt = function(){
 	    $http({
 		  method: 'GET',
-		  url: artworkFirebase
+		  url: artworkFirebase + '.json'
 		}).then(function successCallback(response) {
 		    console.log('it works!!', response);
 		    $scope.artwork = response.data;
@@ -45,5 +55,7 @@ app.controller("ArtworkCtrl", function($scope, $http) {
 		});
     }
     getArt();
+
+
 
 });

@@ -19,10 +19,11 @@
         <th data-field="yearCompleted">Year Completed</th>
         <th data-field="filename">Filename</th>
         <th data-field="thumbnail">Thumbnail</th>
+        <th></th>
     </tr>
   </thead>
 
-  <tbody  ng-repeat="art in artwork">
+  <tbody  ng-repeat="(key, art) in artwork">
     <tr>
       <td>{{art.title}}</td>
       <td>{{art.medium}}</td>
@@ -30,6 +31,7 @@
       <td>{{art.yearCompleted}}</td>
       <td>{{art.filename}}</td>
       <td><img src="{{art.imgUrl}}" style='height: 50px'></td>
+      <td><button ng-click="deleteArt(key)">Delete</button></td>
     </tr>
   </tbody>
 </table>
