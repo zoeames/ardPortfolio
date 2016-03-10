@@ -1,20 +1,34 @@
 app.controller("ArtworkCtrl", function($scope, $http) {
     $scope.title = "Artwork";
-    $scope.artwork = {};
+    $scope.artwork = [];
     $scope.newArtwork = {};
+  	$scope.sortType     = 'title'; // set the default sort type
+  	$scope.sortReverse  = false;  // set the default sort order
+  	$scope.searchArtwork   = '';     // set the default search/filter term
 
-    var artworkFirebase = 'https://ad-portfilio.firebaseio.com/artwork.json'
+
+    var artworkFirebase = 'https://ad-portfilio.firebaseio.com/artwork';
 
 
-
-
+	$scope.deleteArt = function(artId){
+		console.log('you are in the delete!!!', artId)
+		$http({
+		 	method: 'DELETE',
+		 	url: artworkFirebase +'/'+ artId + '.json'
+		}).then(function successCallback(response) {
+		    console.log('it works!!', response);
+		    getArt();
+		}, function errorCallback(response) {
+		    console.log('error in ArtworkCtrl DELETE request', response);
+		});
+	};
 
 
     $scope.addArt = function(){
     	console.log($scope.newArtwork);
 	    $http({
 			method: 'POST',
-		 	url: artworkFirebase,
+		 	url: artworkFirebase+'.json',
 		 	data: {
 		 		title: $scope.newArtwork.title,
 		 		medium: $scope.newArtwork.medium,
@@ -36,14 +50,22 @@ app.controller("ArtworkCtrl", function($scope, $http) {
     var getArt = function(){
 	    $http({
 		  method: 'GET',
-		  url: artworkFirebase
+		  url: artworkFirebase + '.json'
 		}).then(function successCallback(response) {
 		    console.log('it works!!', response);
-		    $scope.artwork = response.data;
+		    $scope.artwork2 = response.data;
+		    $scope.artwork = Object.keys($scope.artwork2).map(function(key) {
+		    	var newObject = $scope.artwork2[key];
+		    	newObject['firebaseKey'] = key;
+    			return newObject;
+  			});
+  			console.log($scope.artwork)
 		}, function errorCallback(response) {
 		    console.log('error in ArtworkCtrl get request', response);
 		});
     }
     getArt();
+
+
 
 });
