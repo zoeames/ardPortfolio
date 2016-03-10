@@ -1,7 +1,11 @@
 app.controller("ArtworkCtrl", function($scope, $http) {
     $scope.title = "Artwork";
-    $scope.artwork = {};
+    $scope.artwork = [];
     $scope.newArtwork = {};
+  	$scope.sortType     = 'title'; // set the default sort type
+  	$scope.sortReverse  = false;  // set the default sort order
+  	$scope.searchArtwork   = '';     // set the default search/filter term
+
 
     var artworkFirebase = 'https://ad-portfilio.firebaseio.com/artwork';
 
@@ -49,7 +53,13 @@ app.controller("ArtworkCtrl", function($scope, $http) {
 		  url: artworkFirebase + '.json'
 		}).then(function successCallback(response) {
 		    console.log('it works!!', response);
-		    $scope.artwork = response.data;
+		    $scope.artwork2 = response.data;
+		    $scope.artwork = Object.keys($scope.artwork2).map(function(key) {
+		    	var newObject = $scope.artwork2[key];
+		    	newObject['firebaseKey'] = key;
+    			return newObject;
+  			});
+  			console.log($scope.artwork)
 		}, function errorCallback(response) {
 		    console.log('error in ArtworkCtrl get request', response);
 		});
