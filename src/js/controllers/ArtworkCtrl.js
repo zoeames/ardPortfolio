@@ -2,9 +2,9 @@ app.controller("ArtworkCtrl", function($scope, artworkFactory, $http) {
     $scope.title = "Artwork";
     $scope.artwork = [];
     $scope.newArtwork = {};
-  	$scope.sortType     = 'title'; // set the default sort type
-  	$scope.sortReverse  = false;  // set the default sort order
-  	$scope.searchArtwork   = '';     // set the default search/filter term
+  	$scope.sortType = 'title'; 
+  	$scope.sortReverse = false;
+  	$scope.searchArtwork = '';
 
 	$scope.deleteArt = function(artId){
 		artworkFactory.deleteArtwork(artId).success(function(data, status) {
@@ -12,7 +12,6 @@ app.controller("ArtworkCtrl", function($scope, artworkFactory, $http) {
 				getAllTheArtwork(); 
 			}
     	});
-
 	};
 
     $scope.addArt = function(){
@@ -21,7 +20,6 @@ app.controller("ArtworkCtrl", function($scope, artworkFactory, $http) {
 			getAllTheArtwork(); 
 		});
     }
-
 
    	var getAllTheArtwork = function(){
 	    artworkFactory.getArtwork().success(function(data, status) {

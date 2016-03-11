@@ -1,3 +1,23 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+    background-color: $eggshell;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: $darkgray;
+    color: $aqua;
+}
+
 strong {
   font-weight: 700;
 }
@@ -6,8 +26,4 @@ strong {
 h1{
 	color: $aqua;
 	text-align: center;
-}
-
-body{
-	background-color: $eggshell;
 }
