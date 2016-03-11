@@ -1,47 +1,22 @@
-.nav ul {
-  list-style: none;
-  background-color: $darkgray;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-.nav li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
-}
- 
-.nav a {
-  text-decoration: none;
-  color: $aqua;
-  display: block;
-  transition: .3s background-color;
-}
- 
-.nav a:hover {
-  background-color: $lightgray;
-}
- 
-.nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
+.nav-wrapper{
+  
+  .brand-logo{
+    padding-left: 30px !important; 
+    color: $aqua !important;
+  }
+
+  ul{
+    padding-right: 30px !important;
+    color: $aqua !important;
+  }
+
 }
 
+nav{
+  background-color: $darkgray !important;
+  color: $aqua !important;
+}
 
-@media screen and (min-width: 600px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }
- 
-  .nav li {
-    display: inline-block;
-    margin-right: -4px;
-  }
+nav ul a {
+  color: $aqua !important; 
 }

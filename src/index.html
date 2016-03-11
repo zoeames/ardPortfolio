@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Alanna Rose Dunn</title>
-<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="vendor/materialize/css/materialize.min.css"  media="screen,projection"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body ng-app="ardPortfolio">
+	<head>
+		<title>Alanna Rose Dunn</title>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="vendor/materialize/css/materialize.min.css"  media="screen,projection"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body ng-app="ardPortfolio">
 
-<div ng-include src="'views/nav.html'"></div>
-<div ng-view>
-  
-</div>
-<div ng-include src="'views/footer.html'"></div>
-<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
-<script type="text/javascript" src="vendor/angular-route/angular-route.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="vendor/materialize/js/materialize.min.js"></script>
+		<div ng-include src="'views/nav.html'"></div>
 
-<script type="text/javascript" src="./js/app.js"></script>
-<script type="text/javascript" src="./js/factories/artworkFactory.js"></script>
-<script type="text/javascript" src="./js/controllers/WelcomeCtrl.js"></script>
-<script type="text/javascript" src="./js/controllers/AboutCtrl.js"></script>
-<script type="text/javascript" src="./js/controllers/GalleryCtrl.js"></script>
-<script type="text/javascript" src="./js/controllers/ArtworkCtrl.js"></script>
-</body>
+		<div ng-view>
+		  
+		</div>
+
+		<div ng-include src="'views/footer.html'"></div>
+
+
+
+
+
+		<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+		<script type="text/javascript" src="vendor/angular-route/angular-route.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="vendor/materialize/js/materialize.min.js"></script>
+
+		<script type="text/javascript" src="./js/app.js"></script>
+		<script type="text/javascript" src="./js/factories/artworkFactory.js"></script>
+		<script type="text/javascript" src="./js/controllers/WelcomeCtrl.js"></script>
+		<script type="text/javascript" src="./js/controllers/AboutCtrl.js"></script>
+		<script type="text/javascript" src="./js/controllers/GalleryCtrl.js"></script>
+		<script type="text/javascript" src="./js/controllers/ArtworkCtrl.js"></script>
+	</body>
 </html>
