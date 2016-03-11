@@ -11,22 +11,24 @@
 	background-color: $lightgray;
 }
 
-.artCard h5{
+.art-card-title{
 	z-index: 2000;
     margin-top: 30px;
     margin-bottom: 10px;
     padding-right: 30px;
     padding-left: 30px;
     color: $aqua;
+    text-align: center;
 }
 
 
 
-.artCard p {
+.art-card-medium{
     z-index: 2000;
     font-style: italic;
     padding-right: 30px;
     padding-left: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     color: $darkgray;
+    text-align: center;
 }

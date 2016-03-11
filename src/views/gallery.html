@@ -3,12 +3,12 @@
 	<div class='row'>
 		<div class='portfolio-controls'></div>
 		<div class='grid'>
-			<div class='col s4 sidePad' ng-repeat="art in artwork">
+			<div class='col s3 sidePad' ng-repeat="art in artwork">
 				<div class='artCard'>
 					<div><img class='portfolioImage' src="{{art.previewUrl}}"></div>
 					<div>
-						<h5>{{art.title}}</h5>
-						<p>{{art.medium}}</p>	
+						<h5 class='art-card-title'>{{art.title}}</h5>
+						<p class='art-card-medium'>{{art.medium}}</p>	
 					</div>
 				</div>
 			</div>
