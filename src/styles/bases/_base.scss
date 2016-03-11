@@ -4,18 +4,8 @@ html {
 }
 
 body {
-    margin: 0 0 100px; /* bottom = footer height */
+    margin: 0 0 64px; /* bottom = footer height */
     background-color: $eggshell;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: $darkgray;
-    color: $aqua;
 }
 
 strong {
