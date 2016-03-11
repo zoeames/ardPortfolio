@@ -1,8 +1,17 @@
 <h1>{{title}}</h1>  
-<div class='portfolio-container'>
-	<ul ng-repeat="art in artwork">
-  		<li>Title: {{art.title}}</li>
-  		<li>Medium: {{art.medium}}</li>
-  		<li>Filename: {{art.filename}}</li>
-	</ul>
+<div id='portfolio'>
+	<div class='row'>
+		<div class='portfolio-controls'></div>
+		<div class='grid'>
+			<div class='col s4 sidePad' ng-repeat="art in artwork">
+				<div class='artCard'>
+					<div><img class='portfolioImage' src="{{art.previewUrl}}"></div>
+					<div>
+						<h5>{{art.title}}</h5>
+						<p>{{art.medium}}</p>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

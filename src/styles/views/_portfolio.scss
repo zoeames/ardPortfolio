@@ -1,0 +1,32 @@
+.sidePad{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.portfolioImage{
+	width: 100%;
+}
+
+.artCard{
+	background-color: $lightgray;
+}
+
+.artCard h5{
+	z-index: 2000;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: $aqua;
+}
+
+
+
+.artCard p {
+    z-index: 2000;
+    font-style: italic;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    color: $darkgray;
+}
