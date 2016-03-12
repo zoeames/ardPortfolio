@@ -11,7 +11,8 @@ gulp.task('copyVendor', function() {
         "jquery" : "jquery/dist/jquery*.js",
         "angular" : "angular/angular*.js",
         "angular-route":"angular-route/angular-route.js",
-       "materialize":"materialize-css/dist/**/*" 
+        "materialize":"materialize-css/dist/**/*",
+        "angular-materialize":"angular-materialize/src/angular-materialize.js"
     }
 
     for (var destinationDir in npm) {
