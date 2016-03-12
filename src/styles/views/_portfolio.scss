@@ -12,7 +12,7 @@
 }
 
 .art-card-title{
-	z-index: 2000;
+	z-index: 200;
     margin-top: 30px;
     margin-bottom: 10px;
     padding-right: 30px;
@@ -21,14 +21,48 @@
     text-align: center;
 }
 
-
-
 .art-card-medium{
-    z-index: 2000;
+    z-index: 200;
     font-style: italic;
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
     color: $darkgray;
     text-align: center;
+}
+
+.show-camera:hover img{
+    opacity:0.5;
+}
+
+.show-camera {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.show-camera:hover a {
+    opacity: 1;
+    top: 0;
+    z-index: 500;
+}
+
+.show-camera:hover a span {
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.show-camera a {
+    display: block;
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: inherit;
 }

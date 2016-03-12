@@ -5,11 +5,15 @@
 		<div class='grid'>
 			<div class='col s3 sidePad' ng-repeat="art in artwork">
 				<div class='artCard'>
-					<div><img class='portfolioImage' src="{{art.previewUrl}}"></div>
+					<div class="show-camera">
+						<img class='portfolioImage' src="{{art.previewUrl}}">
+						<a class='camera'><span class="fa fa-camera fa-3x"></span></a>
+					</div>
 					<div>
 						<h5 class='art-card-title'>{{art.title}}</h5>
 						<p class='art-card-medium'>{{art.medium}}</p>	
 					</div>
+					
 				</div>
 			</div>
 		</div>
