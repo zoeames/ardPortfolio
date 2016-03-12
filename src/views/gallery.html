@@ -7,21 +7,12 @@
 				<div class='artCard'>
 					<div class="show-camera">
 						<img class='portfolioImage' src="{{art.previewUrl}}">
-						<a href='#demoModal' class='camera' modal><span class="fa fa-camera fa-3x"></span></a>
+						<a ng-click="show(art)" class='camera' modal><span class="fa fa-camera fa-3x"></span></a>
 					</div>
 					<div>
 						<h5 class='art-card-title'>{{art.title}}</h5>
 						<p class='art-card-medium'>{{art.medium}}</p>	
 					</div>
-				</div>
-				<div id="demoModal" class="modal">
-				    <div class="modal-content">
-				        <h4>{{art.title}}</h4>
-				        <p>{{art.medium}}</p>
-				    </div>
-				    <div class="modal-footer">
-				        <a  class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-				    </div>
 				</div>
 			</div>
 		</div>

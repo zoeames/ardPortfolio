@@ -1,7 +1,7 @@
 'use strict';
 
-var gulp   		= require('gulp');
-var config 		= require('../config');
+var gulp           = require('gulp');
+var config 	= require('../config');
 var refresh 	= require('gulp-livereload');
 var lrserver 	= require('tiny-lr')();
 
@@ -12,7 +12,8 @@ gulp.task('copyVendor', function() {
         "angular" : "angular/angular*.js",
         "angular-route":"angular-route/angular-route.js",
         "materialize":"materialize-css/dist/**/*",
-        "angular-materialize":"angular-materialize/src/angular-materialize.js"
+        "angular-materialize":"angular-materialize/src/angular-materialize.js",
+        "v-modal": "v-modal/dist/**/*"
     }
 
     for (var destinationDir in npm) {

@@ -1,4 +1,4 @@
-var app = angular.module("ardPortfolio", ['ngRoute', 'ui.materialize']);
+var app = angular.module("ardPortfolio", ['ngRoute', 'vModal']);
 
 app.config(['$routeProvider',
   function($routeProvider) {

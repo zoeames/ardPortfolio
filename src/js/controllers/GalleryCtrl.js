@@ -1,4 +1,4 @@
-app.controller("GalleryCtrl", function($scope, artworkFactory) {
+app.controller("GalleryCtrl", function($scope, artModal, artworkFactory) {
     $scope.title = "Gallery";
     $scope.artwork = {};
 
@@ -9,4 +9,9 @@ app.controller("GalleryCtrl", function($scope, artworkFactory) {
 	};
 	
 	getAllTheArtwork(); 
+
+    $scope.show = function (art) {
+        console.log(art);
+        artModal.activate(art);
+    }
 });
