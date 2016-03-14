@@ -1,4 +1,4 @@
-app.controller("ArtworkCtrl", function($scope, artworkFactory, $http) {
+app.controller("ArtworkCtrl", function($scope, artworkFactory) {
     $scope.title = "Artwork";
     $scope.artwork = [];
     $scope.newArtwork = {};

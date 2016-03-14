@@ -24,7 +24,8 @@ app.factory('artworkFactory', function($http){
                     size: newArtwork.size,
                     yearCompleted: newArtwork.yearCompleted,
                     filename: newArtwork.filename,
-                    imgUrl: '/images/artwork/'+newArtwork.filename
+                    imgUrl: '/images/artwork/full/'+newArtwork.filename,
+                    previewUrl: '/images/artwork/preview/'+newArtwork.filename,
                 }
             })
         },

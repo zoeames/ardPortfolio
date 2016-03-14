@@ -12,8 +12,12 @@ strong {
   font-weight: 700;
 }
 
-
-h1{
+h1, h2{
 	color: $aqua;
 	text-align: center;
+}
+
+h3, h4, h5, h6 {
+  color: $darkgray;
+  text-align: center;
 }
